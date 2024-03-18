@@ -1,0 +1,27 @@
+body {
+    background-color: burlywood;
+}
+.container {
+    display: inline-block;
+    height: 60%;
+  }
+  .image {
+    padding: 20px;
+    flex: 1;
+    
+   
+    overflow: hidden; 
+  }
+  .image img {
+   
+    object-fit: cover; 
+  }
+  
+.text {
+   
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    margin: 1%;
+    box-sizing: border-box;
+  }

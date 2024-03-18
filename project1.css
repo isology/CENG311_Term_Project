@@ -1,0 +1,46 @@
+body {
+    background-color: burlywood;
+}
+.container {
+   
+    height: 100%;
+  }
+  .image {
+    flex: 1;
+    height: 100%;
+    overflow: hidden; 
+  }
+  .image img {
+   
+    object-fit: cover; 
+  }
+  #image1 {
+    margin-top: 10px;
+    padding: 20px;
+    height: 100%;
+    width:100%;
+  }
+  #image2 {
+    width: 100%;
+    height: 80%;
+    padding: 20px;
+}
+#image3 {
+    padding: 20px;
+    height: 100%;
+    width:100%;
+  }
+  #image4 {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.text {
+   
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    margin: 1%;
+    box-sizing: border-box;
+  }
