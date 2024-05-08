@@ -1,22 +1,27 @@
+/* Set background color for the body */
 body {
     background-color: burlywood;
 }
+
+/* Styling for the container */
 .container {
     display: inline-block;
     height: 60%;
   }
+
+  /* Styling for individual image containers */
   .image {
     padding: 20px;
     flex: 1;
-    
-   
     overflow: hidden; 
   }
+
+  /* Styling for images within image containers */
   .image img {
-   
     object-fit: cover; 
   }
   
+  /* Styling for text overlaying the images */
 .text {
    
     width: 100%;
@@ -25,6 +30,8 @@ body {
     margin: 1%;
     box-sizing: border-box;
   }
+
+  /* Styling for the navbar */
   nav {
     background-color: #333;
     padding: 20px;
@@ -32,11 +39,15 @@ body {
     justify-content: space-between;
     align-items: center;
   }
+
+  /* Styling for the logo in the navbar */
   .logo {
     font-size: 24px;
     color: white;
     text-decoration: none;
   }
+  
+  /* Styling for the menu items in the navbar */
   .menu {
     list-style-type: none;
     margin: 0;

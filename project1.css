@@ -1,79 +1,106 @@
+/* Set background color for the body */
 body {
-    background-color: burlywood;
-}
-.container {
-   
-    height: 100%;
-  }
-  .image {
-    flex: 1;
-    height: 100%;
-    overflow: hidden; 
-  }
-  .image img {
-   
-    object-fit: cover; 
-  }
-  #image1 {
-    margin-top: 10px;
-    padding: 20px;
-    height: 100%;
-    width:100%;
-  }
-  #image2 {
-    width: 100%;
-    height: 80%;
-    padding: 20px;
-}
-#image3 {
-    padding: 20px;
-    height: 100%;
-    width:100%;
-  }
-  #image4 {
-    width: 100%;
-    height: 100%;
-    padding: 20px;
+  background-color: burlywood;
 }
 
+/* Set height for the container */
+.container {
+  height: 100%;
+}
+
+/* Styling for individual image containers */
+.image {
+  flex: 1;
+  height: 100%;
+  overflow: hidden; 
+}
+
+/* Styling for images within image containers */
+.image img {
+  object-fit: cover; 
+}
+
+/* Styling for the first image */
+#image1 {
+  margin-top: 10px;
+  padding: 20px;
+  height: 100%;
+  width:100%;
+}
+
+/* Styling for the second image */
+#image2 {
+  width: 100%;
+  height: 80%;
+  padding: 20px;
+}
+
+/* Styling for the third image */
+#image3 {
+  padding: 20px;
+  height: 100%;
+  width:100%;
+}
+
+/* Styling for the fourth image */
+#image4 {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+}
+
+/* Styling for text overlaying the images */
 .text {
-   
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
-    color: white;
-    margin: 1%;
-    box-sizing: border-box;
-  }
-  nav {
-    background-color: #333;
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .logo {
-    font-size: 24px;
-    color: white;
-    text-decoration: none;
-  }
-  .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-  }
-  .menu li {
-    margin-right: 20px;
-  }
-  .menu li:last-child {
-    margin-right: 0;
-  }
-  .menu li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-  }
-  .menu li a:hover {
-    color: #ff7f50;
-  }
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+  color: white;
+  margin: 1%;
+  box-sizing: border-box;
+}
+
+/* Styling for the navbar */
+nav {
+  background-color: #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Styling for the logo in the navbar */
+.logo {
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+/* Styling for the menu items in the navbar */
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+/* Styling for individual menu items in the navbar */
+.menu li {
+  margin-right: 20px;
+}
+
+/* Remove margin from the last menu item in the navbar */
+.menu li:last-child {
+  margin-right: 0;
+}
+
+/* Styling for links within the menu items in the navbar */
+.menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+/* Styling for hovered links within the menu items in the navbar */
+.menu li a:hover {
+  color: #ff7f50;
+}
