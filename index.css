@@ -55,14 +55,14 @@ nav {
 /* Styling for the first image */
 #image1 {
   padding: 20px;
-  height: 60%;
-  width: 60%;
+  height: 30%;
+  width: 30%;
 }
 
 /* Styling for the second image */
 #image2 {
-  width: 80%;
-  height: 80%;
+  width: 40%;
+  height: 40%;
   padding: 20px;
 }
 
@@ -92,4 +92,70 @@ nav {
   color: white;
   padding: 10px;
   box-sizing: border-box;
+}
+
+#mask {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9000;
+  background-color: #000;
+  display: none;
+}
+
+#boxes .window {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 440px;
+  height: 200px;
+  display: none;
+  z-index: 9999;
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#boxes #dialog {
+  width: 750px;
+  height: 300px;
+  padding: 10px;
+  background-color: #ffffff;
+  font-family: 'Segoe UI Light', sans-serif;
+  font-size: 15pt;
+}
+
+#popupfoot {
+  font-size: 16pt;
+  position: absolute;
+  bottom: 0px;
+  width: 250px;
+  left: 250px;
+}
+
+#owl-image1 {
+  width: 20%;
+  height: 20%;
+  margin-left: 40%;
+  margin-top: 5%;
+  
+}
+#owl-image2 {
+  width: 20%;
+  height: 20%;
+  margin-left: 40%;
+  margin-top: 5%;
+  
+}
+#owl-image3 {
+  width: 30%;
+  height: 30%;
+  margin-left: 35%;
+  margin-top: 10%;
+}
+
+.item {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
 }
