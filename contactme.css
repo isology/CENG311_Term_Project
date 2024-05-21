@@ -50,3 +50,49 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+nav {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Styling for the logo in the navbar */
+.logo {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Styling for the menu items in the navbar */
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  /* Styling for individual menu items in the navbar */
+  .menu li {
+    margin-right: 20px;
+  }
+  
+  /* Remove margin from the last menu item in the navbar */
+  .menu li:last-child {
+    margin-right: 0;
+  }
+  
+  /* Styling for links within the menu items in the navbar */
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  /* Styling for hovered links within the menu items in the navbar */
+  .menu li a:hover {
+    color: #ff7f50;
+  }
