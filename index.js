@@ -1,3 +1,52 @@
+document.addEventListener('DOMContentLoaded', function() {
+    const apiKey = 'a686bd0bbe6d650a0dec2a1fb2b1a1f2'; 
+    const city = 'Ankara';
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            const weatherDataDiv = document.getElementById('weather-data');
+            if (data.cod === 200) {
+                const weatherDescription = data.weather[0].description;
+                const temperature = data.main.temp;
+                const humidity = data.main.humidity;
+
+                weatherDataDiv.innerHTML = `
+                    <p>Location: ${city}</p>
+                    <p>Weather: ${weatherDescription}</p>
+                    <p>Temperature: ${temperature}°C</p>
+                    <p>Humidity: ${humidity}%</p>
+                `;
+            } else {
+                weatherDataDiv.innerHTML = `<p>Error fetching weather data: ${data.message}</p>`;
+            }
+        })
+        .catch(error => {
+            const weatherDataDiv = document.getElementById('weather-data');
+            weatherDataDiv.innerHTML = `<p>Error fetching weather data: ${error.message}</p>`;
+        });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const quoteUrl = 'https://api.quotable.io/random';
+
+    fetch(quoteUrl)
+        .then(response => response.json())
+        .then(data => {
+            const quoteDiv = document.getElementById('quote-data');
+            quoteDiv.innerHTML = `
+                <blockquote>"${data.content}"</blockquote>
+                <p>- ${data.author}</p>
+            `;
+        })
+        .catch(error => {
+            const quoteDiv = document.getElementById('quote-data');
+            quoteDiv.innerHTML = `<p>Error fetching quote: ${error.message}</p>`;
+        });
+});
+
+
 $(document).ready(function() {	
 
     $("#owl-demo").owlCarousel({

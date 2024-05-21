@@ -10,6 +10,63 @@ h1 {
   color: papayawhip;
 }
 
+/* Quote Styling */
+.quote {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+}
+
+.quote h2 {
+  margin-top: 0;
+}
+
+.quote blockquote {
+  font-size: 1.2em;
+  margin: 0 0 10px;
+  padding: 0;
+  quotes: "“" "”" "‘" "’";
+}
+
+.quote blockquote:before {
+  content: open-quote;
+}
+
+.quote blockquote:after {
+  content: close-quote;
+}
+
+.quote p {
+  margin: 0;
+  font-style: italic;
+  text-align: right;
+}
+
+.ajax {
+  display: flexbox;
+}
+
+/* Weather Report Styling */
+.weather-report {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  max-width: 400px;
+}
+
+.weather-report h2 {
+  margin-top: 0;
+}
+
+#weather-data {
+  font-size: 16px;
+}
+
 
 /* Styling for the navbar */
 nav {
